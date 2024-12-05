@@ -1,3 +1,6 @@
+# Given an array of character sorted in ascending
+order, find the greatest character that is less than
+the target character in the array.If there is not such element return ‘no such character’
 
 
 class CharBinary {
