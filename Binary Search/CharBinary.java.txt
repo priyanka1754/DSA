@@ -1,0 +1,24 @@
+
+
+class CharBinary {
+    public static void main(String[] args) {
+        char arr[]={'c', 'e', 'g', 'k', 'y'};
+        char target='a';
+        int l=0;
+        int r=arr.length-1;
+        while(l<=r){
+            int mid=l+(r-l)/2;
+            if(arr[mid]>target){
+                r=mid-1;
+            }else{
+                l=mid+1;
+            }
+        }
+        if(r<0){
+            System.out.println("no such character");
+        }else{
+            System.out.println(arr[r]);
+        }
+        
+    }
+}
