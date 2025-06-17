@@ -1,7 +1,7 @@
-https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/description/
+//https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/description/
 
 
-1662. Check If Two String Arrays are Equivalent
+//1662. Check If Two String Arrays are Equivalent
 
 
 class Solution {
