@@ -28,5 +28,23 @@ class Solution {
 }
 
 
-//another solution using hashSet....
+//another solution using hashSet and recursion....
 
+class Solution {
+    HashSet<Integer> hs=new HashSet<>();
+    public boolean isHappy(int n) {
+        
+        if(n==1) return true;
+        if(hs.contains(n)) return false;
+        hs.add(n);
+
+        int sumOfSquares=0;
+        while(n>0){
+            int rem=n%10;
+            sumOfSquares+=rem*rem;
+            n/=10;
+        }
+
+        return isHappy(sumOfSquares);
+    }
+}
