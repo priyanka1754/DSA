@@ -2,7 +2,7 @@ Minimum Cost to Connect Rods:
 
 You are given the lengths of N rods. You want to connect all the rods to form a single rod. The cost of connecting 2 rods of lengths: L1 and L2 is L1+L2. The resultant rod will also be of size L1+L2. Your task is to find the minimum cost to connect all the rods.
 
-
+https://hive.smartinterviews.in/contests/smart-interviews-primary/problems/minimum-cost-to-connect-rods
 
 import java.io.*;
 import java.util.*;
