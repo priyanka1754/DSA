@@ -3,7 +3,7 @@ Given an array of integers of size N and a window size K.
 For each continuous window of size K, find the highest element in the window.
 Output the sum of the highest element of all the windows.
 
-  import java.io.*;
+import java.io.*;
 import java.util.*;
 
 public class Main {
@@ -19,7 +19,6 @@ public class Main {
             for(int i=0;i<n;i++){
                 a[i]=sc.nextInt();
             }
-            Deque<Integer> dq=new Deque<>();
             int sum=0;
             for(int i=0;i<n-k+1;i++){
                 int j=i+k;
