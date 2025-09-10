@@ -6,3 +6,6 @@ select max(salary) SecondHighestSalary from Employee where salary<(select max(sa
 
 https://leetcode.com/problems/combine-two-tables/
 select p.firstName,p.lastName,a.city,a.state from Person p left join Address a on p.personId=a.personId 
+
+https://leetcode.com/problems/consecutive-numbers/
+select distinct l1.num as ConsecutiveNums from Logs l1,Logs l2,Logs l3 where l1.id=l2.id-1 and l2.id=l3.id-1 and l1.num=l2.num and l2.num=l3.num
