@@ -12,3 +12,6 @@ select distinct l1.num as ConsecutiveNums from Logs l1,Logs l2,Logs l3 where l1.
 
 https://leetcode.com/problems/employees-earning-more-than-their-managers/
 select e.name as "Employee" from employee e join employee m on e.managerId=m.Id and e.salary>m.salary
+
+https://leetcode.com/problems/duplicate-emails/
+select email from person group by email having  count(email)>1
