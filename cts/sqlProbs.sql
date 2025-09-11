@@ -15,3 +15,6 @@ select e.name as "Employee" from employee e join employee m on e.managerId=m.Id 
 
 https://leetcode.com/problems/duplicate-emails/
 select email from person group by email having  count(email)>1
+
+https://leetcode.com/problems/customers-who-never-order/
+select c.name as Customers from customers c left join orders o on c.id=o.customerId where o.customerId is null
