@@ -9,3 +9,6 @@ select p.firstName,p.lastName,a.city,a.state from Person p left join Address a o
 
 https://leetcode.com/problems/consecutive-numbers/
 select distinct l1.num as ConsecutiveNums from Logs l1,Logs l2,Logs l3 where l1.id=l2.id-1 and l2.id=l3.id-1 and l1.num=l2.num and l2.num=l3.num
+
+https://leetcode.com/problems/employees-earning-more-than-their-managers/
+select e.name as "Employee" from employee e join employee m on e.managerId=m.Id and e.salary>m.salary
