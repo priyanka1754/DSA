@@ -18,3 +18,13 @@ select email from person group by email having  count(email)>1
 
 https://leetcode.com/problems/customers-who-never-order/
 select c.name as Customers from customers c left join orders o on c.id=o.customerId where o.customerId is null
+
+https://leetcode.com/problems/department-highest-salary/
+SELECT d.name AS Department, e.name AS Employee, e.salary AS Salary
+FROM employee e
+JOIN department d ON e.departmentId = d.id
+WHERE (e.departmentId, e.salary) IN (
+    SELECT departmentId, MAX(salary)
+    FROM employee
+    GROUP BY departmentId
+);
