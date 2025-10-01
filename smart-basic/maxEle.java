@@ -1,9 +1,9 @@
-https://hive.smartinterviews.in/contests/smart-interviews-basic/problems/max-element-in-array
+// https://hive.smartinterviews.in/contests/smart-interviews-basic/problems/max-element-in-array
 
 
-Max Element in Array
+// Max Element in Array
 
-1.using in-build fn Arrays.sort and then getting max ele
+// 1.using in-build fn Arrays.sort and then getting max ele
 import java.io.*;
 import java.util.*;
 
@@ -23,7 +23,7 @@ public class Main {
 }
 
 
-2.iterative method comparing and then replacing max with highest ele..
+// 2.iterative method comparing and then replacing max with highest ele..
 import java.io.*;
 import java.util.*;
 
@@ -49,7 +49,7 @@ public class Main {
 
 
 
-3.recursive code..
+// 3.recursive code..
 import java.io.*;
 import java.util.*;
 
@@ -73,7 +73,7 @@ public class Main {
         return max;
     }
 }
-but here are some problems..
+// but here are some problems..
 
 import java.io.*;
 import java.util.*;
@@ -96,31 +96,31 @@ public class Main {
         return Math.max(a[i],findMax(a,n,i+1));
     }
 }
-this is working code..
-findMax(a,4,0)
- └─ needs max( a[0]=3 , findMax(a,4,1) )
-                |
-                v
-         findMax(a,4,1)
-          └─ needs max( a[1]=7 , findMax(a,4,2) )
-                          |
-                          v
-                   findMax(a,4,2)
-                    └─ needs max( a[2]=1 , findMax(a,4,3) )
-                                    |
-                                    v
-                             findMax(a,4,3)
-                              └─ base case → return a[3] = 9
+// this is working code..
+// findMax(a,4,0)
+//  └─ needs max( a[0]=3 , findMax(a,4,1) )
+//                 |
+//                 v
+//          findMax(a,4,1)
+//           └─ needs max( a[1]=7 , findMax(a,4,2) )
+//                           |
+//                           v
+//                    findMax(a,4,2)
+//                     └─ needs max( a[2]=1 , findMax(a,4,3) )
+//                                     |
+//                                     v
+//                              findMax(a,4,3)
+//                               └─ base case → return a[3] = 9
 
 
-Now unwinding (return values flowing up):
+// Now unwinding (return values flowing up):
 
-findMax(a,4,3) → returns 9
+// findMax(a,4,3) → returns 9
 
-findMax(a,4,2) → Math.max(1, 9) → returns 9
+// findMax(a,4,2) → Math.max(1, 9) → returns 9
 
-findMax(a,4,1) → Math.max(7, 9) → returns 9
+// findMax(a,4,1) → Math.max(7, 9) → returns 9
 
-findMax(a,4,0) → Math.max(3, 9) → returns 9
+// findMax(a,4,0) → Math.max(3, 9) → returns 9
 
-✅ Final Answer = 9
+// ✅ Final Answer = 9
